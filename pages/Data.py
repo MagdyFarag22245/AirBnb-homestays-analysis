@@ -5,7 +5,7 @@ from zipfile import ZipFile
 
 
 
-zip_file_path = "D:\Study\Epsilon DS\Bnb_project\sources\Airbnb_Open_Data.zip"
+zip_file_path = "./sources/Airbnb_Open_Data.zip"
 with ZipFile(zip_file_path, 'r') as zip_ref:
     zip_ref.extractall()
 extracted_files = zip_ref.namelist()
